@@ -24,6 +24,10 @@ get '/about' do
   erb :about
 end
 
+get '/new' do
+  erb :new
+end
+
 after do
   ActiveRecord::Base.connection.close
 end
